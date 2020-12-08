@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./parties/header.ejs');-%>
+    <form action="/blogs" method="POST">
+        <input type="text" name="title" required placeholder="Name">
+        <input type="text" name="body" required placeholder="body">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
