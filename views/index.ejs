@@ -14,7 +14,8 @@
         <% blogs.forEach(blog => { %>
           <a class="single" href="/blogs/<%= blog._id %>">
             <h3 class="title"><%= blog.title %></h3>
-            <p class="snippet"><%= blog.snippet %></p>
+            <img src="<%=blog.imgSrc%>" alt="">
+            <p class="body"><%= blog.body %></p>
           </a>
         <% }) %>
       <% } else { %>
